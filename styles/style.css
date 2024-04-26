@@ -1,333 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&family=Bebas+Neue&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
 body{
     font-family: Poppins;
     margin: 0;
     color: #eee;
-    display: block;
     user-select: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.container_header{
-    height: 100px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100px;
 }
 
 .content_header{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 50px;
-    width: 100%;
-    z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  width: 90%;
+  height: 90%;
 }
 
 .logo{
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    width: 100px;
-    height: 50px;
-    color: #495057;
-    font-weight: 700;
-    font-size: 14px;
+  font-family: "Akshar", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 100%;
 }
 
-.menu{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 500px;
-    list-style: none;
-    color: #495057;
-    font-size: 14px;
-    font-weight: 500;
+.nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  gap: 80px;
 }
 
-.menu li ul:hover{
-    color: #242424;
-    cursor: pointer;
+.nav li{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  list-style-type: none;
 }
 
-.search{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 300px;
-    
+
+.account button{
+  background-image: linear-gradient(to right, #4b6cb7 0%, #182848  51%, #4b6cb7  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  border-radius: 0px 100px 0px 100px;
+  border: none;
+  display: block;
 }
 
-.search-box{
-    background-color: #fff;
-    border-radius: 15px;
-    padding: 2px 10px;
-    border: 1px solid #495057;
-
-}
-
-.input-search{
-    border: none;
-    outline: none;
-}
-
-.search i{
-    color: #495057;
+.account button:hover{
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 
 .container_main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 98%;
-    margin: 20px;
-    border-radius: 15px;
-    height: 82vh;
-    background-image: url(/img/geordanna-cordero-2Qg4y32pdCc-unsplash.jpg);
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/img/2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-
-.content_mid{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 90%;
-}
-
-.content_top{
-    width: 90%;
-    height: fit-content;
-}
-
-.text_category{
-    text-align: center;
-    text-wrap: nowrap;
-    width: fit-content;
-    height: fit-content;
-}
-
-.text_category p{
-    margin: 0;
-}
-.buttons_category{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    width: 30%;
-    height: 50px;
-}
-
-.buttons_category .plus{
-    padding: 7px;
-    background-color: cornflowerblue;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.category{
-    padding: 0px 20px;
-    border: 2px solid cornflowerblue;
-    border-radius: 5px;
-    background-color: transparent;
-}
-
-.category:hover{
-    background-color: cornflowerblue;
-    cursor: pointer;
-}
-
-.category p{
-    font-size: 11px;
-    color: #fff;
-}
-.item_circle_1{
-    border: 5px solid cornflowerblue;
-    position: absolute;
-    left: 20%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-wrap: wrap;
-    z-index: 1;
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    background-color:#cc8ab0;
-}
-
-.title_produto p{
-    color: black;
-}
-
-.title_produto{
-    margin-top: 10px;
-    text-align: center;
-    width: 40%;
-    height: fit-content;
-    margin-bottom: 10px;
-}
-.pointer{
-    height: 10px;
-    width: 30px;
-    background-color: #495057;
-    border-radius: 50px;
-}
-.beneficio_1{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 11px;
-    font-weight: 300;
-    margin-right: 100px;
-    width: 50%;
-    height: fit-content;
-}
-.beneficio_2{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-right: 100px;
-    font-size: 11px;
-    font-weight: 300;
-    width: 50%;
-    height: fit-content;
-}
-.beneficio_3{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-right: 100px;
-    font-size: 11px;
-    font-weight: 300;
-    width: 50%;
-    height: fit-content;
-}
-.item_circle_2{
-    border: 5px solid black;
-    left: 35%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    background-color:blue;
-}
-
-.item_circle_2 img{
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-}
-.item_circle_3{
-    border: 5px solid black;
-    left: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    z-index: 3;
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    background-color:blueviolet;
-}
-.item_circle_3 img{
-    width: 340px;
-    height: 340px;
-    border-radius: 50%;
-}
-.image img{
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0%;
-    z-index: 0;
-}
 .content_main{
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    width: 90%;
-    height: 70%;
-}
-.texto_main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-}
-.texto_main h2{
-    text-align: center;
-    font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 100%;
 }
 
-.texto_main h3{
-    font-size: 20px;
+.content_main h2{
+  font-family: "Akshar", sans-serif;
+  width: 700px;
+  height: 300px;
+  text-align: center;
+  font-size: 80px;
+  color: #fff;
 }
 
-.container_produtos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-    background-color: aqua;
+.left_main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 70%;
+  background-color: #4b6cb7;
 }
 
-.content_produtos{
-    width: 90%;
-    height: 90vh;
-    background-color: aquamarine;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+.right_main{
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
 }
 
-.item_produto_container{
-    width: 300px;
-    height: 300px;
-    background-color: antiquewhite;
-}
-
-
-.item_produto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(0, 255, 60);
-    width: 100%;
-    height: 300px;
-}
-.produto_img img{
-    max-width: 100%;
-    height: 200px;
-}
-
-.nome_produto{
-    width: 100%;
-    height: 50px;
-    background-color: blue;
+.destaque_main{
+  width: 90%;
+  height: 85%;
+  background-color: #fff;
+  opacity: 1;
+  border-bottom-left-radius: 250px;
+  border-bottom-right-radius: 250px;
 }
