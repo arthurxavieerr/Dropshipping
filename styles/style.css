@@ -54,6 +54,8 @@ header{
   font-style: normal;
   font-size: 18px;
   list-style-type: none;
+  border-bottom: 1px solid transparent;
+  letter-spacing: 2px;
 }
 
 .nav li:hover {
@@ -104,6 +106,10 @@ header{
 }
 
 .text_main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   font-family: "Cuprum";
   font-size: 50px;
   font-weight: 500;
@@ -120,6 +126,7 @@ header{
 }
 
 .text_main button{
+  font-family: 'Podkova';
   padding: 7px 50px;
   border-radius: 25px;
   border: none;
@@ -144,8 +151,8 @@ header{
   justify-content: center;
   flex-direction: column;
   width: 20%;
-  height: 100%;
   background-image: url(/img/Rectangle\ 1.png);
+  background-size: cover;
 }
 
 .destaque_main img{
@@ -157,7 +164,7 @@ header{
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 250px;
+  height: 100%;
 }
 
 
@@ -187,12 +194,12 @@ header{
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  padding: 40px 0px;
 }
 
 .button_destaque button{
   font-family: 'Podkova';
-  padding: 5px 40px;
+  padding: 8px 40px;
   border-radius: 25px;
   border: none;
   border: 1px solid #fff;
@@ -214,8 +221,8 @@ header{
   width: 40%;
   height: 100%;
   gap: 50px;
-  background: rgb(44,44,44);
-  background: linear-gradient(180deg, rgba(44,44,44,1) 0%, rgba(24,24,24,1) 100%); 
+  background-image: url(/img/Info_Produto.png);
+  background-size: cover;
 }
 
 .section_1{
@@ -277,7 +284,6 @@ header{
 
 .Container_1{
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
@@ -300,12 +306,12 @@ header{
 }
 
 .cards_container{
-  margin-top: 100px;
+  margin-top: 60px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   width: fit-content;
-  gap: 40px;
+  gap: 115px;
 }
 
 .card{
@@ -371,7 +377,178 @@ header{
   padding: 5px 40px;
   border-radius: 25px;
   border: none;
-  background-color: transparent;
-  border: 1px solid #111;
-  color: #111;
+  background-color: #111;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
 }
+
+.banner_container_1{
+  margin-top: 80px;
+  border-radius: 8px;
+  width: 90%;
+  height: 252px;
+  background-image: url(/img/Banner_produtos.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Container_2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  background-color: #000;
+}
+
+.destaque_container_2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+
+.destaque_2_1{
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  width: 100%;
+  height: 85%;
+}
+
+.destaque_2_2{
+  padding-left: 400px;
+  width: 40%;
+  height: 90%;
+}
+
+.destaque_2_3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+}
+
+.destaque_2_3 img{
+  width: 100%;
+  max-height: 100%;
+}
+
+.Container_3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+}
+
+.titulo_destaque_2{
+  margin-top: 110px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo_destaque_2 h2{
+  font-family: 'Bebas Neue';
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.titulo_destaque_2 h3{
+  font-family: "Podkova";
+}
+
+.sobre_destaque_2{
+  margin-top: 60px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+.sobre_destaque_2 h4{
+  font-family: "Bebas Neue";
+  letter-spacing: 2px;
+}
+.info_destaque_2 p{
+  font-family: "Podkova";
+}
+.info_destaque_2{
+  width: 70%;
+}
+.sobre_destaque_2_list{
+  font-family: 'Podkova';
+}
+
+.sintomas_destaque_2_list{
+  font-family: 'Podkova';
+}
+
+.destaque_2_left video{
+  z-index: 0;
+}
+.button_destaque_2{
+  position: absolute;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  z-index: 1;
+  width: 100%;
+  height: 350px;
+  background: rgb(44,44,44);
+  background: linear-gradient(180deg, rgba(44,44,44,0) 0%, rgba(0,0,0,0.6194852941176471) 56%, rgba(0,0,0,1) 96%);
+}
+
+.button_destaque_2{
+
+}
+
+.section_destaque_2{
+  margin-left: 300px;
+}
+
+.section_destaque_2 h3{
+  margin: 0;
+  letter-spacing: 10px;
+  font-family: 'Podkova';
+  font-weight: 700;
+  font-size: 20px;
+  text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+
+.section_destaque_2 h4{
+  margin: 0;
+  margin-top: 30px;
+  font-family: 'Rajdhani';
+  font-weight: 500;
+  font-size: 17px;
+  text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+
+
+.section_destaque_2 button{
+  margin-top: 100px;
+  padding: 15px 100px;
+  border: none;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "Rajdhani";
+  letter-spacing: 4px;
+  
+}
+
+

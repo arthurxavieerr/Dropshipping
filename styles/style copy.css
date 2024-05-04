@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cuprum:ital,wght@0,400..700;1,400..700&family=Podkova:wght@400..800&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+body{
+    font-family: Poppins;
+    margin: 0;
+    color: #eee;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100px;
+}
+
+.content_header{
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  width: 90%;
+  height: 90%;
+}
+
+.logo{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 100%;
+}
+
+.nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  gap: 80px;
+}
+
+.nav li{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  list-style-type: none;
+  border-bottom: 1px solid transparent;
+  letter-spacing: 2px;
+}
+
+.nav li:hover {
+  border-bottom: 1px solid #386DF4;
+  cursor: pointer;
+}
+
+
+.account button{
+  background-image: linear-gradient(to right, #4b6cb7 0%, #182848  51%, #4b6cb7  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  border-radius: 0px 100px 0px 100px;
+  border: none;
+  display: block;
+}
+
+.account button:hover{
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.Container_main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/img/Fundo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main{
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 60%;
+}
+
+.text_main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Cuprum";
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+}
+.text_main span{
+  color: #386DF4;
+}
+.text_main p{
+  font-family: 'Rajdhani';
+  font-size: 20px;
+}
+
+.text_main button{
+  font-family: 'Podkova';
+  padding: 7px 50px;
+  border-radius: 25px;
+  border: none;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+.image_main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+}
+
+.image_main img{
+  width: 100%;
+  max-height: 100%;
+}
+.destaque_main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 20%;
+  background-image: url(/img/Rectangle\ 1.png);
+  background-size: cover;
+}
+
+.destaque_main img{
+  width: 200px;
+  max-height: 100%;
+}
+.destaque_image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+.title_destaque{
+  width: 100%;
+  text-align: center;
+}
+
+.title_destaque h3{
+  font-family: 'Podkova';
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sobre_destaque{
+  text-align: center;
+  width: 100%;
+}
+
+.sobre_destaque p{
+  font-family: 'Podkova';
+  font-size: 14px;
+}
+
+.button_destaque{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 0px;
+}
+
+.button_destaque button{
+  font-family: 'Podkova';
+  padding: 8px 40px;
+  border-radius: 25px;
+  border: none;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+}
+.back{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 90%;
+  height: 15%;
+}
+.info_destaque{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+  gap: 50px;
+  background-image: url(/img/Info_Produto.png);
+  background-size: cover;
+}
+
+.section_1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.section_2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section_3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.marquee {
+  font-family: 'Podkova';
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  height: 50px;
+  overflow-x: hidden;
+  color: #fff;
+  background-color: #111;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 32s linear infinite;
+  width: 100%;
+  text-align: center;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+
+.content{
+  display: flex;
+  gap: 150px;
+  list-style-type: none;
+
+}
+
+.Container_1{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #ECEEE9;
+}
+
+.title_best{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.title_best h2{
+  font-size: 25px;
+  color: #111;
+  letter-spacing: 20px;
+}
+
+.cards_container{
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: fit-content;
+  gap: 115px;
+}
+
+.card{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 285px;
+  height: 400px;
+  background-color: #fff;
+  border: 1px solid #111;
+  border-radius: 8px;
+}
+
+.image_card{
+  width: 70%;
+  height: 250px;
+}
+
+.image_card img{
+  width: 100%;
+  max-height: 100%;
+}
+
+.title_produto{
+  color: #111;
+}
+
+.preco_produto p{
+  margin: 0;
+  font-weight: 200;
+  text-decoration: line-through;
+  color: #111;
+}
+
+.preco{
+  display: flex;
+  gap: 10px;
+}
+
+.preco h4{
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+}
+
+.preco span{
+  padding: 2px 10px;
+  background-color: #111;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.button_buy{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.button_buy button{
+  padding: 5px 40px;
+  border-radius: 25px;
+  border: none;
+  background-color: #111;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.banner_container_1{
+  margin-top: 80px;
+  border-radius: 8px;
+  width: 90%;
+  height: 252px;
+  background-image: url(/img/Banner_produtos.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Container_2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  background-color: #000;
+}
+
+.destaque_container_2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+
+.destaque_2_1{
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  width: 100%;
+  height: 85%;
+}
+
+.destaque_2_2{
+  padding-left: 400px;
+  width: 40%;
+  height: 90%;
+}
+
+.destaque_2_3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+}
+
+.destaque_2_3 img{
+  width: 100%;
+  max-height: 100%;
+}
+
+.Container_3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+}
+
+.titulo_destaque_2{
+  margin-top: 110px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo_destaque_2 h2{
+  font-family: 'Bebas Neue';
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.titulo_destaque_2 h3{
+  font-family: "Podkova";
+}
+
+.sobre_destaque_2{
+  margin-top: 60px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+.sobre_destaque_2 h4{
+  font-family: "Bebas Neue";
+  letter-spacing: 2px;
+}
+.info_destaque_2 p{
+  font-family: "Podkova";
+}
+.info_destaque_2{
+  width: 70%;
+}
+.sobre_destaque_2_list{
+  font-family: 'Podkova';
+}
+
+.sintomas_destaque_2_list{
+  font-family: 'Podkova';
+}
+
+.destaque_2_left video{
+  z-index: 0;
+}
+.button_destaque_2{
+  position: absolute;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  z-index: 1;
+  width: 100%;
+  height: 350px;
+  background: rgb(44,44,44);
+  background: linear-gradient(180deg, rgba(44,44,44,0) 0%, rgba(0,0,0,0.6194852941176471) 56%, rgba(0,0,0,1) 96%);
+}
+
+.button_destaque_2{
+
+}
+
+.section_destaque_2{
+  margin-left: 300px;
+}
+
+.section_destaque_2 h3{
+  margin: 0;
+  letter-spacing: 10px;
+  font-family: 'Podkova';
+  font-weight: 700;
+  font-size: 20px;
+  text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+
+.section_destaque_2 h4{
+  margin: 0;
+  margin-top: 30px;
+  font-family: 'Rajdhani';
+  font-weight: 500;
+  font-size: 17px;
+  text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+
+
+.section_destaque_2 button{
+  margin-top: 100px;
+  padding: 15px 100px;
+  border: none;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "Rajdhani";
+  letter-spacing: 4px;
+  
+}
+
+
